@@ -1,0 +1,87 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container {
+            width: 210mm;
+            height: 297mm;
+            padding: 20mm;
+            margin: auto;
+            background: #ffffff;
+            box-shadow: 0 0 5mm rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 20px;
+        }
+        .sidebar {
+            background: #f7f9fc;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            margin: 0 0 20px 0;
+            color: #333;
+        }
+        .sidebar p {
+            margin: 10px 0;
+        }
+        .sidebar p strong {
+            color: #555;
+        }
+        .content {
+            padding: 20px;
+            background: #f7f9fc;
+            border-radius: 10px;
+        }
+        .content h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            color: #333;
+            border-bottom: 2px solid #bbb;
+            padding-bottom: 5px;
+        }
+        .content p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content ul li {
+            margin: 5px 0;
+        }
+        .content ul li:before {
+            content: "•";
+            color: #333;
+            margin-right: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        @media print {
+            .container {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                height: auto;
+                padding: 0;
+                display: block;
+            }
+            .sidebar, .content {
+                color: #000;
+                background: none;
+                padding: 0;
+            }
+            .sidebar h1 {
+                color: #000;
+            }
+            .sidebar p strong {
+                color: #000;
+            }
+        }
